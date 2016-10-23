@@ -1,7 +1,12 @@
+body {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 24px;
+}
+
 h1 {
-    color: blue;
 }
 
 ul {
     list-style-type: none;
+    margin: 15px;
 }
