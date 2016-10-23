@@ -28,7 +28,10 @@ def get_list_of_composers():
                     composer = "No composer "
             except KeyError:
                 try:
-                    composer = query_dict['items']['mods']['name']['namePart'][0]
+                    if i in [676, 694, 715, 821, 861, 870, 882, 885, 887]:
+                        composer = query_dict['items']['mods']['name']['namePart']
+                    else:
+                        composer = query_dict['items']['mods']['name']['namePart'][0]
                 except:
                     response = "Check this record: {}".format(i)
 
